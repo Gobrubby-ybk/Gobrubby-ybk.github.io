@@ -6,16 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://gobrubby-ybk.github.io">
-  <title>Archives: 2021/2 | Gobrubby-ybk`Blog</title>
+  <title>git clone下载速度被限制 | Gobrubby-ybk`Blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Gobrubby-ybk&#96;Blog">
-<meta property="og:url" content="https://gobrubby-ybk.github.io/archives/2021/02/index.html">
+  <meta name="description" content="了解git clone下载速度被限制的原因，给出了解决这个原因的具体方案">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git clone下载速度被限制">
+<meta property="og:url" content="https://gobrubby-ybk.github.io/2021/02/23/%E8%A7%A3%E5%86%B3Git%20clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6/index.html">
 <meta property="og:site_name" content="Gobrubby-ybk&#96;Blog">
+<meta property="og:description" content="了解git clone下载速度被限制的原因，给出了解决这个原因的具体方案">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-02-23T12:26:36.000Z">
+<meta property="article:modified_time" content="2021-02-23T12:40:41.883Z">
 <meta property="article:author" content="Gobrubby-ybk">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/Gobrubby-ybk.github.io/atom.xml" title="Gobrubby-ybk`Blog" type="application/atom+xml">
@@ -232,103 +237,118 @@ var _hmt = _hmt || [];
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-解决Git clone下载速度被限制" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/Gobrubby-ybk.github.io/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/Gobrubby-ybk.github.io/2021/02/23/Hexo+Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="archive-article-date">
-        <time datetime="2021-02-23T12:26:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-23</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/Gobrubby-ybk.github.io/2021/02/23/Hexo+Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" target="_blank">Hexo+Github个人博客搭建</a>
   
+    <h1 class="article-title" itemprop="name">
+      git clone下载速度被限制
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">免费</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/Gobrubby-ybk.github.io/categories/技术//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+  <!-- 显示阅读次数-->
   
+      <br/>
+      <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+      <span class="icon-sort"></span>
+      <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+                阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+      </span>
+      </a>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/Gobrubby-ybk.github.io/2021/02/23/%E8%A7%A3%E5%86%B3Git%20clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6/" class="archive-article-date">
         <time datetime="2021-02-23T12:26:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-23</time>
 </a>
 
-        </div>
-    	 
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/Gobrubby-ybk.github.io/2021/02/23/%E8%A7%A3%E5%86%B3Git%20clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6/" target="_blank">git clone下载速度被限制</a>
   
-    </h1>
-  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">192字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
 
 
-        <div class="article-info info-on-right">
-          
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="一、git-clone下载速度被限制原因"><a href="#一、git-clone下载速度被限制原因" class="headerlink" title="一、git clone下载速度被限制原因"></a>一、git clone下载速度被限制原因</h3><ul>
+<li>原因：github.global.ssl.fastly.net域名被限制了</li>
+<li>解决方案：只要找到这个域名对应的ip地址，然后在hosts文件中加上ip–&gt;域名的映射，刷新DNS缓存便可</li>
+</ul>
+<span id="more"></span>
+<h3 id="二、解决方案的具体步骤"><a href="#二、解决方案的具体步骤" class="headerlink" title="二、解决方案的具体步骤"></a>二、解决方案的具体步骤</h3><h5 id="1-查找域名对应的IP地址"><a href="#1-查找域名对应的IP地址" class="headerlink" title="1. 查找域名对应的IP地址"></a>1. <strong>查找域名对应的IP地址</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- Name: github.global.ssl.fastly.Net</span><br><span class="line">  Address: 151.101.229.194</span><br><span class="line"></span><br><span class="line">- Name: github.com</span><br><span class="line">  Address: 13.229.188.59</span><br></pre></td></tr></table></figure>
+<h5 id="2-查找并修改hosts文件"><a href="#2-查找并修改hosts文件" class="headerlink" title="2. 查找并修改hosts文件"></a>2. <strong>查找并修改hosts文件</strong></h5><ul>
+<li>在hosts文件末尾添加两行：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">github.com   13.229.188.59</span><br><span class="line">github.global.ssl.fastly.Net   151.101.229.194</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="附："><a href="#附：" class="headerlink" title="附："></a><strong>附：</strong></h4><ul>
+<li>windows的hosts文件路径：<blockquote>
+<p>C:\Windows\System32\drivers\etc\hosts</p>
+</blockquote>
+</li>
+<li>Linux的hosts文件路径：<blockquote>
+<p>sudo vim /etc/hosts</p>
+</blockquote>
+</li>
+<li>Mac的hosts文件路径<blockquote>
+<p>sudo vi /etc/hosts</p>
+</blockquote>
+<h5 id="3-刷新DNS缓存"><a href="#3-刷新DNS缓存" class="headerlink" title="3. 刷新DNS缓存"></a>3. <strong>刷新DNS缓存</strong></h5></li>
+<li>Windows：<blockquote>
+<p>ipconfig /flushdns</p>
+</blockquote>
+</li>
+<li>Linux：<blockquote>
+<p>sudo /etc/init.d/networking restart</p>
+</blockquote>
+</li>
+<li>Mac：<blockquote>
+<p>sudo killall -HUP mDNSResponder</p>
+</blockquote>
+</li>
+</ul>
+
+    
+    
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -340,7 +360,7 @@ var _hmt = _hmt || [];
 		</ul>
 	</div>
 
-          
+    
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -353,49 +373,171 @@ var _hmt = _hmt || [];
 	</div>
 
 
+    
+
+    
+    <!- 百度自动推送方式提交 -->
+
+  <script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
+
+<!- 百度自动推送方式提交结束 -->
+
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+        <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gobrubby-ybk.github.io/.github.io/2021/02/23/%E8%A7%A3%E5%86%B3Git%20clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/Gobrubby-ybk.github.io/2021/02/22/hello-world/" class="archive-article-date">
-        <time datetime="2021-02-22T05:17:48.940Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-22</time>
-</a>
 
+
+<nav id="article-nav">
+  
+    <a href="/Gobrubby-ybk.github.io/2021/02/23/Hexo+Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hexo+Github个人博客搭建
+        
+      </div>
+    </a>
+  
+  
+    <a href="/Gobrubby-ybk.github.io/2021/02/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/Gobrubby-ybk.github.io/2021/02/22/hello-world/" target="_blank">Hello World</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81git-clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.</span> <span class="toc-text">一、git clone下载速度被限制原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E7%9A%84%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4"><span class="toc-number">2.</span> <span class="toc-text">二、解决方案的具体步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%9F%A5%E6%89%BE%E5%9F%9F%E5%90%8D%E5%AF%B9%E5%BA%94%E7%9A%84IP%E5%9C%B0%E5%9D%80"><span class="toc-number">2.0.1.</span> <span class="toc-text">1. 查找域名对应的IP地址</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E6%9F%A5%E6%89%BE%E5%B9%B6%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6"><span class="toc-number">2.0.2.</span> <span class="toc-text">2. 查找并修改hosts文件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%99%84%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">附：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%88%B7%E6%96%B0DNS%E7%BC%93%E5%AD%98"><span class="toc-number">2.1.1.</span> <span class="toc-text">3. 刷新DNS缓存</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
   
+  <div id="gitment-ctn"></div>
   
-    </div></section>
+    <!-- 中文 -->
+    <link rel="stylesheet" href="/Gobrubby-ybk.github.io/lib/gitment.css">
+    <script src="/Gobrubby-ybk.github.io/lib/gitment.js"></script>
+  
+  <script>
+    <!-- id: "git clone下载速度被限制" -->
+    var gitment = new Gitment({
+      id: "20210223202636",
+      owner: 'Gobrubby-ybk',
+      repo: 'blog-gitment',
+      oauth: {
+        client_id: '6c195fc818563bc99c91',
+        client_secret: 'b8cb19174adc130fe56ebcee684e165793f25da1',
+      },
+    })
+    gitment.render('gitment-ctn')
+  </script>
+
+
   
 
-    
+
+
+
 
 
           </div>
@@ -436,8 +578,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,

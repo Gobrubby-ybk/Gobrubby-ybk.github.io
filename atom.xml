@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Gobrubby-ybk`Blog</title>
+  
+  
+  <link href="https://gobrubby-ybk.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://gobrubby-ybk.github.io/"/>
+  <updated>2021-02-26T07:07:34.216Z</updated>
+  <id>https://gobrubby-ybk.github.io/</id>
+  
+  <author>
+    <name>Gobrubby-ybk</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo+Github个人博客搭建</title>
+    <link href="https://gobrubby-ybk.github.io/2021/02/23/Hexo+Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <id>https://gobrubby-ybk.github.io/2021/02/23/Hexo+Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</id>
+    <published>2021-02-23T12:26:36.000Z</published>
+    <updated>2021-02-26T07:07:34.216Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Hexo-GitHub发文流程"><a href="#Hexo-GitHub发文流程" class="headerlink" title="Hexo+GitHub发文流程"></a><em>Hexo+GitHub发文流程</em></h3><p><img src="http://qp4i0ffz6.hn-bkt.clouddn.com/Hexo%2BGithub%E5%8F%91%E6%96%87%E6%B5%81%E7%A8%8B.png" alt="Hexo+GitHub发文流程"></p><h3 id="一、注册GitHub账号并创建个人博客仓库"><a href="#一、注册GitHub账号并创建个人博客仓库" class="headerlink" title="一、注册GitHub账号并创建个人博客仓库"></a>一、注册GitHub账号并创建个人博客仓库</h3><ul><li>仓库格式要求：用户名.github.io（==用户名必须和GitHub账号的用户名相同==）</li><li><a href="https://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html">GitHub的ssh密钥添加教程</a></li></ul><span id="more"></span><h3 id="二、nodejs、git环境的搭建"><a href="#二、nodejs、git环境的搭建" class="headerlink" title="二、nodejs、git环境的搭建"></a>二、nodejs、git环境的搭建</h3><ul><li><a href="https://blog.csdn.net/qq_43285335/article/details/90696126">nodejs搭建教程</a></li><li><a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">git搭建教程</a></li><li><a href="https://www.cnblogs.com/luyuandatabase/p/12145707.html">配置淘宝云</a>（用于加速下载）</li></ul><h3 id="三、利用hexo搭建博客"><a href="#三、利用hexo搭建博客" class="headerlink" title="三、利用hexo搭建博客"></a>三、利用hexo搭建博客</h3><ul><li><a href="https://hexoscript.gitbook.io/hexo-script/">脚本教程</a></li><li><a href="https://blog.csdn.net/jspnetcn/article/details/104111651">matery主题安装及优化</a></li></ul><h3 id="四、设置GitHub-Pages"><a href="#四、设置GitHub-Pages" class="headerlink" title="四、设置GitHub Pages"></a>四、设置GitHub Pages</h3><ol><li>进入以<font color="red"><code>用户名.github.io</code></font>命名的仓库，选择<font color="red"><code>Settings</code></font>，找到<font color="red"><code>GitHub Pages</code></font></li><li>复制GitHub Pages所给的网址，修改博客主配置文件<font color="red"><code>_config.yml</code></font>中的<font color="red"><code>url</code></font>为刚复制的网址，并将<font color="red"><code>root</code></font>修改为<font color="red"><code>仓库名</code></font></li><li>切换分支，将默认分支main修改为<font color="red"><code>master</code></font>，hexo才可以正常加载显示（因为在使用hexo部署博客时，系统会创建一个master分支）<br><img src="http://qp4i0ffz6.hn-bkt.clouddn.com/%E5%88%87%E6%8D%A2%E5%88%86%E6%94%AF.png" alt="效果图"></li></ol><h3 id="五、博客主题设置"><a href="#五、博客主题设置" class="headerlink" title="五、博客主题设置"></a>五、博客主题设置</h3><ol><li>进入<a href="https://hexo.io/">Hexo官网</a></li><li>选择Themes，进行主题选择</li><li>选择好自己钟意的主题，点击主题的标题进入主题资源安装</li><li>根据主题文档的步骤进行博客主配置文件的修改和主题的配置文件的修改</li><li>在博客文件夹中运行git bash输入以下指令</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean      #清空缓存</span><br><span class="line">hexo s          #启动本地服务器，重新编译</span><br><span class="line">hexo d          #自动部署到GitHub或coding</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">使用Hexo和Github Pages创建的个人免费博客的基本步骤</summary>
+    
+    
+    
+    <category term="技术" scheme="https://gobrubby-ybk.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="博客" scheme="https://gobrubby-ybk.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="免费" scheme="https://gobrubby-ybk.github.io/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+    <category term="Hexo" scheme="https://gobrubby-ybk.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git clone下载速度被限制</title>
+    <link href="https://gobrubby-ybk.github.io/2021/02/23/%E8%A7%A3%E5%86%B3Git%20clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6/"/>
+    <id>https://gobrubby-ybk.github.io/2021/02/23/%E8%A7%A3%E5%86%B3Git%20clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6/</id>
+    <published>2021-02-23T12:26:36.000Z</published>
+    <updated>2021-02-23T12:40:41.883Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、git-clone下载速度被限制原因"><a href="#一、git-clone下载速度被限制原因" class="headerlink" title="一、git clone下载速度被限制原因"></a>一、git clone下载速度被限制原因</h3><ul><li>原因：github.global.ssl.fastly.net域名被限制了</li><li>解决方案：只要找到这个域名对应的ip地址，然后在hosts文件中加上ip–&gt;域名的映射，刷新DNS缓存便可</li></ul><span id="more"></span><h3 id="二、解决方案的具体步骤"><a href="#二、解决方案的具体步骤" class="headerlink" title="二、解决方案的具体步骤"></a>二、解决方案的具体步骤</h3><h5 id="1-查找域名对应的IP地址"><a href="#1-查找域名对应的IP地址" class="headerlink" title="1. 查找域名对应的IP地址"></a>1. <strong>查找域名对应的IP地址</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- Name: github.global.ssl.fastly.Net</span><br><span class="line">  Address: 151.101.229.194</span><br><span class="line"></span><br><span class="line">- Name: github.com</span><br><span class="line">  Address: 13.229.188.59</span><br></pre></td></tr></table></figure><h5 id="2-查找并修改hosts文件"><a href="#2-查找并修改hosts文件" class="headerlink" title="2. 查找并修改hosts文件"></a>2. <strong>查找并修改hosts文件</strong></h5><ul><li>在hosts文件末尾添加两行：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">github.com   13.229.188.59</span><br><span class="line">github.global.ssl.fastly.Net   151.101.229.194</span><br></pre></td></tr></table></figure></li></ul><h4 id="附："><a href="#附：" class="headerlink" title="附："></a><strong>附：</strong></h4><ul><li>windows的hosts文件路径：<blockquote><p>C:\Windows\System32\drivers\etc\hosts</p></blockquote></li><li>Linux的hosts文件路径：<blockquote><p>sudo vim /etc/hosts</p></blockquote></li><li>Mac的hosts文件路径<blockquote><p>sudo vi /etc/hosts</p></blockquote><h5 id="3-刷新DNS缓存"><a href="#3-刷新DNS缓存" class="headerlink" title="3. 刷新DNS缓存"></a>3. <strong>刷新DNS缓存</strong></h5></li><li>Windows：<blockquote><p>ipconfig /flushdns</p></blockquote></li><li>Linux：<blockquote><p>sudo /etc/init.d/networking restart</p></blockquote></li><li>Mac：<blockquote><p>sudo killall -HUP mDNSResponder</p></blockquote></li></ul>]]></content>
+    
+    
+    <summary type="html">了解git clone下载速度被限制的原因，给出了解决这个原因的具体方案</summary>
+    
+    
+    
+    <category term="问题" scheme="https://gobrubby-ybk.github.io/categories/%E9%97%AE%E9%A2%98/"/>
+    
+    
+    <category term="git" scheme="https://gobrubby-ybk.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://gobrubby-ybk.github.io/2021/02/22/hello-world/"/>
+    <id>https://gobrubby-ybk.github.io/2021/02/22/hello-world/</id>
+    <published>2021-02-22T05:17:48.940Z</published>
+    <updated>2021-02-23T12:40:59.900Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
