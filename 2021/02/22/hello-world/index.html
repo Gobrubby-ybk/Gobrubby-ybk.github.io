@@ -99,6 +99,8 @@ var _hmt = _hmt || [];
 			<h1 class="header-author"><a href="/Gobrubby-ybk.github.io/">Gobrubby-ybk</a></h1>
 		</hgroup>
 		
+		<p class="header-subtitle">Frustration Is The Tuition Fee For Success</p>
+		
 
 		<nav class="header-menu">
 			<ul>
@@ -186,6 +188,8 @@ var _hmt = _hmt || [];
 			  <h1 class="header-author js-header-author">Gobrubby-ybk</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>Frustration Is The Tuition Fee For Success<i class="icon icon-quo-right"></i></p>
+			
 			
 			
 				
@@ -268,12 +272,6 @@ var _hmt = _hmt || [];
   
 
 
-      <!-- 显示阅读次数-->
-      
-        <span class="archive-article-date">
-            阅读量 <span id="busuanzi_value_page_pv"></span>
-        </span>
-      
 
   
   
@@ -281,7 +279,7 @@ var _hmt = _hmt || [];
         <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
-
+      
 <a href="/Gobrubby-ybk.github.io/2021/02/22/hello-world/" class="archive-article-date">
         <time datetime="2021-02-22T05:17:48.940Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-22</time>
 </a>
@@ -312,6 +310,7 @@ var _hmt = _hmt || [];
 
 
   
+  
   </header>
   
   <div class="article-entry" itemprop="articleBody">
@@ -332,7 +331,7 @@ var _hmt = _hmt || [];
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
     
-    
+
     
 
     
@@ -476,32 +475,13 @@ var _hmt = _hmt || [];
 
 
 
-  
-  <div id="gitment-ctn"></div>
-  
-    <!-- 中文 -->
-    <link rel="stylesheet" href="/Gobrubby-ybk.github.io/lib/gitment.css">
-    <script src="/Gobrubby-ybk.github.io/lib/gitment.js"></script>
-  
-  <script>
-    <!-- id: "Hello World" -->
-    var gitment = new Gitment({
-      id: "20210222131748",
-      owner: 'MbugHole',
-      repo: 'blog-gitment',
-      oauth: {
-        client_id: '6c195fc818563bc99c91',
-        client_secret: 'b8cb19174adc130fe56ebcee684e165793f25da1',
-      },
-    })
-    gitment.render('gitment-ctn')
-  </script>
-
-
-  
 
 
 
+
+
+
+</div>
 
 
 
@@ -521,7 +501,44 @@ var _hmt = _hmt || [];
       	</div>
     </div>
   </div>
-  
+
+  <span id="sitetime"></span>
+	<script language=javascript>
+			function siteTime(){
+					window.setTimeout("siteTime()", 1000);
+					var seconds = 1000;
+					var minutes = seconds * 60;
+					var hours = minutes * 60;
+					var days = hours * 24;
+					var years = days * 365;
+					var today = new Date();
+					var todayYear = today.getFullYear();
+					var todayMonth = today.getMonth()+1;
+					var todayDate = today.getDate();
+					var todayHour = today.getHours();
+					var todayMinute = today.getMinutes();
+					var todaySecond = today.getSeconds();
+					/* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+					year - 作为date对象的年份，为4位年份值
+					month - 0-11之间的整数，做为date对象的月份
+					day - 1-31之间的整数，做为date对象的天数
+					hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+					minutes - 0-59之间的整数，做为date对象的分钟数
+					seconds - 0-59之间的整数，做为date对象的秒数
+					microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+					var t1 = Date.UTC(2021,02,21,00,00,00); //建站时间
+					var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+					var diff = t2-t1;
+					var diffYears = Math.floor(diff/years);
+					var diffDays = Math.floor((diff/days)-diffYears*365);
+					var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+					var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+					var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+					document.getElementById("sitetime").innerHTML=" 已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+			}/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+			siteTime();
+	</script>
+
   
 	<script src="/Gobrubby-ybk.github.io/lib/busuanzi.pure.js"></script>
 	
