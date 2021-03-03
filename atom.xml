@@ -6,7 +6,7 @@
   <link href="https://gobrubby-ybk.github.io/atom.xml" rel="self"/>
   
   <link href="https://gobrubby-ybk.github.io/"/>
-  <updated>2021-03-03T13:14:32.921Z</updated>
+  <updated>2021-03-02T03:17:18.141Z</updated>
   <id>https://gobrubby-ybk.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git clone下载速度被限制</title>
+    <link href="https://gobrubby-ybk.github.io/2021/02/23/%E8%A7%A3%E5%86%B3Git%20clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6/"/>
+    <id>https://gobrubby-ybk.github.io/2021/02/23/%E8%A7%A3%E5%86%B3Git%20clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6/</id>
+    <published>2021-02-23T12:26:36.000Z</published>
+    <updated>2021-03-02T03:17:18.141Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、git-clone下载速度被限制原因"><a href="#一、git-clone下载速度被限制原因" class="headerlink" title="一、git clone下载速度被限制原因"></a>一、git clone下载速度被限制原因</h3><ul><li>原因：github.global.ssl.fastly.net域名被限制了</li><li>解决方案：只要找到这个域名对应的ip地址，然后在hosts文件中加上ip–&gt;域名的映射，刷新DNS缓存便可</li></ul><span id="more"></span><h3 id="二、解决方案的具体步骤"><a href="#二、解决方案的具体步骤" class="headerlink" title="二、解决方案的具体步骤"></a>二、解决方案的具体步骤</h3><h5 id="1-查找域名对应的IP地址"><a href="#1-查找域名对应的IP地址" class="headerlink" title="1. 查找域名对应的IP地址"></a>1. <strong>查找域名对应的IP地址</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- Name: github.global.ssl.fastly.Net</span><br><span class="line">  Address: 151.101.229.194</span><br><span class="line"></span><br><span class="line">- Name: github.com</span><br><span class="line">  Address: 13.229.188.59</span><br></pre></td></tr></table></figure><h5 id="2-查找并修改hosts文件"><a href="#2-查找并修改hosts文件" class="headerlink" title="2. 查找并修改hosts文件"></a>2. <strong>查找并修改hosts文件</strong></h5><ul><li>在hosts文件末尾添加两行：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">github.com   13.229.188.59</span><br><span class="line">github.global.ssl.fastly.Net   151.101.229.194</span><br></pre></td></tr></table></figure></li></ul><h4 id="附："><a href="#附：" class="headerlink" title="附："></a><strong>附：</strong></h4><ul><li>windows的hosts文件路径：<blockquote><p>C:\Windows\System32\drivers\etc\hosts</p></blockquote></li><li>Linux的hosts文件路径：<blockquote><p>sudo vim /etc/hosts</p></blockquote></li><li>Mac的hosts文件路径<blockquote><p>sudo vi /etc/hosts</p></blockquote><h5 id="3-刷新DNS缓存"><a href="#3-刷新DNS缓存" class="headerlink" title="3. 刷新DNS缓存"></a>3. <strong>刷新DNS缓存</strong></h5></li><li>Windows：<blockquote><p>ipconfig /flushdns</p></blockquote></li><li>Linux：<blockquote><p>sudo /etc/init.d/networking restart</p></blockquote></li><li>Mac：<blockquote><p>sudo killall -HUP mDNSResponder</p></blockquote></li></ul>]]></content>
+    
+    
+    <summary type="html">了解git clone下载速度被限制的原因，给出了解决这个原因的具体方案</summary>
+    
+    
+    
+    <category term="问题" scheme="https://gobrubby-ybk.github.io/categories/%E9%97%AE%E9%A2%98/"/>
+    
+    
+    <category term="git" scheme="https://gobrubby-ybk.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo+Github个人博客搭建</title>
@@ -38,27 +59,6 @@
     <category term="免费" scheme="https://gobrubby-ybk.github.io/tags/%E5%85%8D%E8%B4%B9/"/>
     
     <category term="Hexo" scheme="https://gobrubby-ybk.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git clone下载速度被限制</title>
-    <link href="https://gobrubby-ybk.github.io/2021/02/23/%E8%A7%A3%E5%86%B3Git%20clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6/"/>
-    <id>https://gobrubby-ybk.github.io/2021/02/23/%E8%A7%A3%E5%86%B3Git%20clone%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E8%A2%AB%E9%99%90%E5%88%B6/</id>
-    <published>2021-02-23T12:26:36.000Z</published>
-    <updated>2021-03-02T03:17:18.141Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="一、git-clone下载速度被限制原因"><a href="#一、git-clone下载速度被限制原因" class="headerlink" title="一、git clone下载速度被限制原因"></a>一、git clone下载速度被限制原因</h3><ul><li>原因：github.global.ssl.fastly.net域名被限制了</li><li>解决方案：只要找到这个域名对应的ip地址，然后在hosts文件中加上ip–&gt;域名的映射，刷新DNS缓存便可</li></ul><span id="more"></span><h3 id="二、解决方案的具体步骤"><a href="#二、解决方案的具体步骤" class="headerlink" title="二、解决方案的具体步骤"></a>二、解决方案的具体步骤</h3><h5 id="1-查找域名对应的IP地址"><a href="#1-查找域名对应的IP地址" class="headerlink" title="1. 查找域名对应的IP地址"></a>1. <strong>查找域名对应的IP地址</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- Name: github.global.ssl.fastly.Net</span><br><span class="line">  Address: 151.101.229.194</span><br><span class="line"></span><br><span class="line">- Name: github.com</span><br><span class="line">  Address: 13.229.188.59</span><br></pre></td></tr></table></figure><h5 id="2-查找并修改hosts文件"><a href="#2-查找并修改hosts文件" class="headerlink" title="2. 查找并修改hosts文件"></a>2. <strong>查找并修改hosts文件</strong></h5><ul><li>在hosts文件末尾添加两行：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">github.com   13.229.188.59</span><br><span class="line">github.global.ssl.fastly.Net   151.101.229.194</span><br></pre></td></tr></table></figure></li></ul><h4 id="附："><a href="#附：" class="headerlink" title="附："></a><strong>附：</strong></h4><ul><li>windows的hosts文件路径：<blockquote><p>C:\Windows\System32\drivers\etc\hosts</p></blockquote></li><li>Linux的hosts文件路径：<blockquote><p>sudo vim /etc/hosts</p></blockquote></li><li>Mac的hosts文件路径<blockquote><p>sudo vi /etc/hosts</p></blockquote><h5 id="3-刷新DNS缓存"><a href="#3-刷新DNS缓存" class="headerlink" title="3. 刷新DNS缓存"></a>3. <strong>刷新DNS缓存</strong></h5></li><li>Windows：<blockquote><p>ipconfig /flushdns</p></blockquote></li><li>Linux：<blockquote><p>sudo /etc/init.d/networking restart</p></blockquote></li><li>Mac：<blockquote><p>sudo killall -HUP mDNSResponder</p></blockquote></li></ul>]]></content>
-    
-    
-    <summary type="html">了解git clone下载速度被限制的原因，给出了解决这个原因的具体方案</summary>
-    
-    
-    
-    <category term="问题" scheme="https://gobrubby-ybk.github.io/categories/%E9%97%AE%E9%A2%98/"/>
-    
-    
-    <category term="git" scheme="https://gobrubby-ybk.github.io/tags/git/"/>
     
   </entry>
   
